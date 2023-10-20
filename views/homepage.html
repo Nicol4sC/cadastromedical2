@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+<body>
+    <section> 
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="Logo.png" class="logo"></a>
+            <ul>
+                <div class="conten">
+                    <div class="textBo">
+                    <a href="login.html">Login</a>
+                    <a href="cadastro.html">Cadastro</a>
+                    </div>
+                    </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="localização.html">Localização</a></li>
+                <li><a href="duvidas.html">Dúvidas</a></li>
+                <li><a href="medicos.html">Especialistas</a></li>
+                
+    
+            </ul>
+
+
+
+        </header>
+
+
+<style>
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F0FBEF;
+  }
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    position: relative;
+    max-width: 250px;
+}
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span {
+   color: #017143; 
+   font-size: 1.2em;
+   font-weight: 900;
+}
+.content .textBox p {
+   color: #333;
+
+}
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+} 
+.content .imgBox img {
+    max-width: 340px;
+}
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    display: flex;
+}
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s ;
+}
+.thumb li:hover {
+    transform: translate(-15px);
+}
+.thumb li img {
+    max-width: 60px;
+}
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     
+}
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.3);
+    
+}
+.sci li {
+    list-style: none;
+}
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+.left-login-image {
+    width: 35vw;
+}
+.conten .textBo a {
+    display: inline-block;
+    margin-top: -5px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+
+
+</style>
+
+
+
+
+        <div class="content">
+          <div class="textBox" >
+            <h2>It's not just a hospital<br>It's a<span>means saving lives</span></h2>
+            <p>“Quer cuidar da minha vida, faça um curso de medicina”</p>
+            <a href="consultas.html">Consulte Aqui</a>
+</div>
+            <div class="ImgBox">
+                <img src="team-work-animate.svg" class="left-login-image" alt="medicine animate">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><a href="loginadmin.html"><img src="Paciente.png" onclick="imgSlider('rheumatology-animate.svg')"></li> </a>
+           <li><a href="loginmedico.html"><img src="Admin.png" onclick="imgSlider('medical-prescription-animate.svg')"></li></a>
+           <li><img src="Médico.png" onclick="imgSlider('team-work-animate.svg')"></li>
+           
+           
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="Facebook.png"></a></li>
+            <li><a href="#"><img src="Instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.left-login-image').src = anything;
+        }
+    </script>
+</body>
+</html>
